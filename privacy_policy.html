@@ -1,261 +1,373 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Planora - Privacy Policy & Terms</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
+<title>Planora - Privacy Policy & Terms of Service</title>
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:Arial, sans-serif;
-    }
+<meta name="description" content="Planora Privacy Policy and Terms of Service. Learn how we protect your data and govern the use of our productivity application.">
+<meta name="keywords" content="Planora, Privacy Policy, Terms, Productivity App, Notes, Tasks, Calendar, Reminders">
 
-    body{
-      background:#eef6fb;
-      padding:30px;
-      color:#1f2937;
-      line-height:1.7;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    .container{
-      max-width:950px;
-      margin:auto;
-      background:#ffffff;
-      border-radius:24px;
-      padding:45px;
-      box-shadow:0 10px 30px rgba(0,0,0,0.08);
-    }
+<style>
 
-    .top{
-      text-align:center;
-      margin-bottom:40px;
-    }
+:root{
+--primary:#2196F3;
+--secondary:#1976D2;
+--bg:#EEF7FD;
+--card:rgba(255,255,255,.75);
+--text:#111827;
+--text-light:#6B7280;
+--border:rgba(255,255,255,.4);
+}
 
-    .logo{
-      width:80px;
-      height:80px;
-      margin:auto;
-      background:linear-gradient(135deg,#42a5f5,#1976d2);
-      border-radius:24px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      color:#fff;
-      font-size:36px;
-      font-weight:bold;
-      box-shadow:0 10px 25px rgba(33,150,243,0.25);
-    }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+scroll-behavior:smooth;
+}
 
-    h1{
-      margin-top:20px;
-      font-size:38px;
-      color:#111827;
-    }
+body{
+background:linear-gradient(135deg,#EEF7FD,#F8FBFF);
+color:var(--text);
+padding:30px;
+}
 
-    .subtitle{
-      margin-top:10px;
-      color:#6b7280;
-      font-size:16px;
-    }
+.container{
+max-width:1100px;
+margin:auto;
+}
 
-    .badge{
-      display:inline-block;
-      margin-top:15px;
-      padding:8px 18px;
-      background:#2196f3;
-      color:#fff;
-      border-radius:30px;
-      font-size:14px;
-    }
+.nav{
+position:sticky;
+top:15px;
+z-index:100;
+backdrop-filter:blur(20px);
+background:rgba(255,255,255,.65);
+border:1px solid var(--border);
+border-radius:24px;
+padding:16px 24px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+margin-bottom:30px;
+}
 
-    .section{
-      margin-top:50px;
-    }
+.logo{
+display:flex;
+align-items:center;
+gap:12px;
+font-weight:800;
+font-size:22px;
+}
 
-    h2{
-      font-size:28px;
-      margin-bottom:15px;
-      color:#111827;
-      border-left:5px solid #2196f3;
-      padding-left:15px;
-    }
+.logo-box{
+width:50px;
+height:50px;
+border-radius:16px;
+background:linear-gradient(135deg,#42A5F5,#1976D2);
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:24px;
+font-weight:bold;
+}
 
-    p{
-      margin-top:12px;
-      color:#4b5563;
-      font-size:16px;
-    }
+.nav-links{
+display:flex;
+gap:20px;
+}
 
-    ul{
-      margin-top:15px;
-      padding-left:25px;
-    }
+.nav-links a{
+text-decoration:none;
+color:#374151;
+font-weight:600;
+}
 
-    li{
-      margin-bottom:12px;
-      color:#4b5563;
-    }
+.hero{
+text-align:center;
+padding:60px 20px;
+}
 
-    .card{
-      background:#f8fbff;
-      border-radius:18px;
-      padding:25px;
-      margin-top:20px;
-      border:1px solid #dbeafe;
-    }
+.hero h1{
+font-size:56px;
+font-weight:800;
+margin-bottom:15px;
+}
 
-    .footer{
-      margin-top:50px;
-      text-align:center;
-      color:#6b7280;
-      font-size:14px;
-    }
+.hero p{
+font-size:18px;
+color:var(--text-light);
+max-width:700px;
+margin:auto;
+line-height:1.8;
+}
 
-    a{
-      color:#1976d2;
-      text-decoration:none;
-      font-weight:600;
-    }
+.badges{
+margin-top:20px;
+display:flex;
+justify-content:center;
+gap:12px;
+flex-wrap:wrap;
+}
 
-    @media(max-width:768px){
+.badge{
+padding:10px 18px;
+border-radius:50px;
+background:var(--primary);
+color:white;
+font-size:14px;
+font-weight:600;
+}
 
-      body{
-        padding:15px;
-      }
+.section{
+margin-top:40px;
+}
 
-      .container{
-        padding:25px;
-      }
+.card{
+background:var(--card);
+backdrop-filter:blur(18px);
+border:1px solid var(--border);
+border-radius:28px;
+padding:35px;
+box-shadow:0 20px 40px rgba(0,0,0,.08);
+transition:.3s;
+}
 
-      h1{
-        font-size:30px;
-      }
+.card:hover{
+transform:translateY(-4px);
+}
 
-      h2{
-        font-size:24px;
-      }
+h2{
+font-size:32px;
+margin-bottom:20px;
+color:#111827;
+}
 
-    }
+p{
+line-height:1.8;
+color:#4B5563;
+margin-bottom:14px;
+}
 
-  </style>
+ul{
+padding-left:25px;
+}
 
+li{
+margin-bottom:12px;
+line-height:1.8;
+color:#4B5563;
+}
+
+.support-email{
+display:inline-block;
+margin-top:15px;
+padding:14px 22px;
+border-radius:14px;
+background:#E3F2FD;
+text-decoration:none;
+color:#1565C0;
+font-weight:700;
+}
+
+.footer{
+margin-top:50px;
+text-align:center;
+padding:30px;
+color:#6B7280;
+}
+
+.footer p{
+margin:6px 0;
+}
+
+@media(max-width:768px){
+
+body{
+padding:15px;
+}
+
+.hero h1{
+font-size:38px;
+}
+
+.nav{
+flex-direction:column;
+gap:15px;
+}
+
+.nav-links{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+padding:25px;
+}
+
+}
+
+@media (prefers-color-scheme: dark){
+
+body{
+background:#0F172A;
+color:white;
+}
+
+.nav{
+background:rgba(30,41,59,.75);
+}
+
+.card{
+background:rgba(30,41,59,.75);
+border-color:rgba(255,255,255,.08);
+}
+
+h2,
+.hero h1,
+.logo,
+.nav-links a{
+color:white;
+}
+
+p,
+li{
+color:#CBD5E1;
+}
+
+.footer{
+color:#94A3B8;
+}
+
+}
+
+</style>
 </head>
 
 <body>
 
-  <div class="container">
+<div class="container">
 
-    <div class="top">
+<div class="nav">
 
-      <div class="logo">
-        P
-      </div>
+<div class="logo">
+<div class="logo-box">P</div>
+Planora
+</div>
 
-      <h1>Planora</h1>
+<div class="nav-links">
+<a href="#privacy">Privacy Policy</a>
+<a href="#terms">Terms & Conditions</a>
+<a href="#contact">Contact</a>
+</div>
 
-      <p class="subtitle">
-        Privacy Policy & Terms & Conditions
-      </p>
+</div>
 
-      <div class="badge">
-        Productivity App
-      </div>
+<section class="hero">
 
-    </div>
+<h1>Planora</h1>
 
-    <!-- PRIVACY POLICY -->
+<p>
+Smart Productivity App for Tasks, Notes, Calendar and Reminders.
+</p>
 
-    <div class="section">
+<div class="badges">
+<div class="badge">Version 1.0</div>
+<div class="badge">Updated June 2026</div>
+</div>
 
-      <h2>Privacy Policy</h2>
+</section>
 
-      <div class="card">
+<section id="privacy" class="section">
 
-        <p>
-          Your privacy is important to us. Planora is designed to help users manage tasks,
-          notes, and schedules securely and efficiently.
-        </p>
+<div class="card">
 
-        <ul>
-          <li>Planora does not collect sensitive personal information.</li>
-          <li>Your notes and tasks are primarily stored locally on your device.</li>
-          <li>We do not sell user data to third parties.</li>
-          <li>Limited permissions may be requested for app functionality.</li>
-          <li>Google Play services may be used for app delivery and analytics.</li>
-        </ul>
+<h2>Privacy Policy</h2>
 
-        <p>
-          We continuously improve our security practices to ensure a safe and stable user experience.
-        </p>
+<p>
+Your privacy is important to us. Planora is designed to help users manage tasks, notes, reminders and schedules securely.
+</p>
 
-      </div>
+<ul>
+<li>Your tasks and notes are primarily stored locally on your device.</li>
+<li>Planora does not sell personal information to third parties.</li>
+<li>Notification permissions may be requested for reminder functionality.</li>
+<li>Limited analytics and platform services may be used to improve app performance.</li>
+<li>Users may delete their data at any time through app settings.</li>
+<li>Reasonable security measures are used to protect user information.</li>
+</ul>
 
-    </div>
+<p>
+By continuing to use Planora, you acknowledge and agree to this Privacy Policy.
+</p>
 
-    <!-- TERMS -->
+</div>
 
-    <div class="section">
+</section>
 
-      <h2>Terms & Conditions</h2>
+<section id="terms" class="section">
 
-      <div class="card">
+<div class="card">
 
-        <p>
-          By downloading or using Planora, you agree to the following terms and conditions.
-        </p>
+<h2>Terms & Conditions</h2>
 
-        <ul>
-          <li>Planora is intended for personal productivity and planning purposes.</li>
-          <li>Users are responsible for managing and backing up their own content.</li>
-          <li>Misuse of the application is prohibited.</li>
-          <li>Features may be updated or modified without prior notice.</li>
-          <li>Planora is provided "as is" without warranties.</li>
-        </ul>
+<p>
+By downloading, installing or using Planora, you agree to the following terms.
+</p>
 
-        <p>
-          We are not responsible for data loss, indirect damages, or issues caused by device misuse.
-        </p>
+<ul>
+<li>Planora is intended for productivity, planning and personal organization purposes.</li>
+<li>Users are responsible for maintaining backups of important information.</li>
+<li>Users must not misuse, reverse engineer or abuse the application.</li>
+<li>Features may be modified, improved or discontinued without prior notice.</li>
+<li>Planora is provided "as is" without warranties of any kind.</li>
+<li>Sensora Labs shall not be liable for indirect damages, losses or data loss resulting from the use of the application.</li>
+</ul>
 
-      </div>
+<p>
+Continued use of Planora constitutes acceptance of these Terms & Conditions.
+</p>
 
-    </div>
+</div>
 
-    <!-- CONTACT -->
+</section>
 
-    <div class="section">
+<section id="contact" class="section">
 
-      <h2>Contact Support</h2>
+<div class="card">
 
-      <div class="card">
+<h2>Contact Support</h2>
 
-        <p>
-          If you have any questions, feedback, or support requests, contact us:
-        </p>
+<p>
+For support requests, bug reports, feedback or business inquiries, please contact us.
+</p>
 
-        <p style="margin-top:20px;">
-          📧
-          <a href="mailto:planorasupport@gmail.com">
-            planorasupport@gmail.com
-          </a>
-        </p>
+<a class="support-email"
+href="mailto:planorasupport@gmail.com">
+planorasupport@gmail.com
+</a>
 
-      </div>
+</div>
 
-    </div>
+</section>
 
-    <!-- FOOTER -->
+<div class="footer">
 
-    <div class="footer">
+<p>© 2026 Planora. All Rights Reserved.</p>
+<p>Built with ❤️ by Sensora Labs</p>
 
-      © 2026 Planora. All rights reserved.
+</div>
 
-    </div>
-
-  </div>
+</div>
 
 </body>
 </html>
+```
